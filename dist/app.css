@@ -19,7 +19,7 @@
   height: 100%;
   display: flex;
 }
-.container main .left, .container main .right {
+.container main .left, .container main .right, .container main .center {
   background-color: #ADD8E6;
   display: flex;
   justify-content: center;
@@ -27,9 +27,6 @@
   flex-grow: 1;
 }
 .container main .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 3;
+  flex-grow: 4;
   background-color: #FFA500;
 }

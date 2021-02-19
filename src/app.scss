@@ -23,14 +23,13 @@ $heightHeader:100px;
     main{
         height: 100%;
         display: flex;
-        .left, .right{
+        .left, .right,.center{
             background-color: $col_color;
             @include flex-center;
             flex-grow: 1; 
         }
         .center{
-            @include flex-center;
-            flex-grow: 3;
+            flex-grow: 4;
             background-color: $center_color;
         }
     }
