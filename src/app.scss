@@ -1,0 +1,38 @@
+$color_coral:#F08080;
+$col_color:#ADD8E6;
+$center_color:#FFA500;
+$heightHeader:100px;
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    header,footer{
+        background-color: $color_coral;
+        text-align: center;
+        height: $heightHeader;
+        @include flex-center;
+    }
+    main{
+        height: 100%;
+        display: flex;
+        .left, .right{
+            background-color: $col_color;
+            @include flex-center;
+            flex-grow: 1; 
+        }
+        .center{
+            @include flex-center;
+            flex-grow: 3;
+            background-color: $center_color;
+        }
+    }
+}
+
